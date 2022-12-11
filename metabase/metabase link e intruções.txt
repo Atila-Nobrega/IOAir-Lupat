@@ -1,0 +1,8 @@
+Muito grande para caber no Github, o link de download do arquivo .jar:
+https://downloads.metabase.com/v0.45.0/metabase.jar
+
+Para executar:
+java -jar metabase.jar
+
+Após executado, abrir no navegador e configurar ao banco de preferência:
+http://localhost:3000/setup

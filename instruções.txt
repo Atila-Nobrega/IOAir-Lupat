@@ -1,0 +1,29 @@
+######### INSTRUÇÕES IOT HUB ################
+Passos para rodar a nossa aplicação:
+
+- Instalar no terminal os pacotes do SDK IoT Hub para python:
+
+pip install -r requirements.txt
+
+- Substituir no SimulatedDevice.py o serial correto do dispostivo criado, representação por imagem nos slides: (Por padrão eu deixei os meus códigos)
+
+CONNECTION_STRING = (Conection string do dispositivo criado no IoT Hub)
+
+- Substituir no SendCloudToDeviceMessage.py o serial correto do IoT Hub, e o Id do dispositivo para qual as mensagens serão encaminhadas:
+
+CONNECTION_STRING = (Conection string do IoT Hub)
+DEVICE_ID = (Id do dispoisitivo criado)
+
+- Iniciar o Dispositivo Simulado para receber as mensagens:
+
+python SimulatedDevice.py
+
+- Iniciar o backend que enviará as mensagens para o dispostivo:
+
+python SendCloudToDeviceMessage.py
+
+######### FIM ############
+
+
+obs: no código SendCloudToDeviceMessage.py pode ser configurado o número de mensagens a ser enviado.
+MESSAGE_COUNT = 10
